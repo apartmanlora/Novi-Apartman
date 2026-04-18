@@ -3,88 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apartman Premium | Lokacija i Galerija</title>
+<title>Apartman Premium | Vaš odmor na moru</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+html { scroll-behavior: smooth; }
+.shadow-text { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+</style>
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
 
 <nav class="bg-white shadow-sm sticky top-0 z-50">
 <div class="container mx-auto px-6 py-4 flex justify-between items-center">
 <h1 class="text-2xl font-bold text-blue-700">Apartman <span class="text-blue-400">Premium</span></h1>
-<div class="space-x-6 font-medium">
-<a href="#opis" class="hover:text-blue-700">O nama</a>
-<a href="#lokacija" class="hover:text-blue-700">Lokacija</a>
-<a href="#galerija" class="hover:text-blue-700">Galerija</a>
-<a href="#kontakt" class="hover:text-blue-700">Kontakt</a>
+<div class="hidden md:flex space-x-6 font-medium text-sm md:text-base">
+<a href="#opis" class="hover:text-blue-700 transition">O nama</a>
+<a href="#galerija" class="hover:text-blue-700 transition">Galerija</a>
+<a href="#lokacija" class="hover:text-blue-700 transition">Lokacija</a>
+<a href="#kontakt" class="hover:text-blue-700 transition">Kontakt</a>
+</div>
+<div class="md:hidden">
+<a href="#kontakt" class="text-blue-700 text-xl"><i class="fas fa-envelope"></i></a>
 </div>
 </div>
 </nav>
 
-<header class="relative h-[50vh] flex items-center justify-center text-white">
+<header class="relative h-[60vh] flex items-center justify-center text-white">
 <div class="absolute inset-0 bg-black/35 z-10"></div>
 <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
 <div class="relative z-20 text-center px-4">
-<h2 class="text-4xl md:text-5xl font-extrabold mb-3">Savršena lokacija za odmor</h2>
-<p class="text-xl opacity-95">Istražite okolicu našeg apartmana.</p>
+<h2 class="text-4xl md:text-6xl font-extrabold mb-3 shadow-text">Dobrodošli u Vaš savršen odmor</h2>
+<p class="text-xl md:text-2xl opacity-90 font-light shadow-text">Elegancija i mir na samoj obali mora.</p>
 </div>
 </header>
 
-<main class="container mx-auto px-6 py-16">
+<main class="container mx-auto px-6 py-12 max-w-5xl">
 
-<div class="grid lg:grid-cols-3 gap-12">
-<div class="lg:col-span-2 space-y-12">
-
-<section id="opis" class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-<h3 class="text-2xl font-bold mb-4">O apartmanu</h3>
-<p class="text-gray-600 leading-relaxed">
-Naš apartman nudi idealan spoj modernog komfora i izvrsne lokacije. Sve što vam je potrebno za ugodan boravak nalazi se nadohvat ruke.
+<section id="opis" class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 mb-12">
+<h3 class="text-3xl font-bold mb-6 text-gray-900 border-b pb-4">O apartmanu</h3>
+<div class="prose prose-blue max-w-none text-gray-600 leading-relaxed space-y-6 text-lg">
+<p>
+Uživajte u luksuzu i udobnosti našeg prostranog apartmana. Naša lokacija nudi savršen spoj mira i blizine svih bitnih sadržaja. Apartman je opremljen modernim namještajem i nudi sve što vam je potrebno za potpuno opuštanje.
 </p>
+<p>
+Provedite jutra na sunčanoj terasi uz miris mora, a večeri u ugodnom ambijentu našeg dnevnog boravka. Plaža se nalazi na svega nekoliko minuta hoda od objekta.
+</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 text-sm font-semibold text-blue-700">
+<div class="flex items-center"><i class="fas fa-snowflake mr-2 text-blue-400"></i> Klima uređaj</div>
+<div class="flex items-center"><i class="fas fa-wifi mr-2 text-blue-400"></i> Besplatan Wi-Fi</div>
+<div class="flex items-center"><i class="fas fa-parking mr-2 text-blue-400"></i> Besplatan Parking</div>
+<div class="flex items-center"><i class="fas fa-tv mr-2 text-blue-400"></i> Smart TV</div>
+</div>
+</div>
 </section>
 
-<section id="lokacija" class="bg-white p-2 rounded-3xl shadow-md border border-gray-100 overflow-hidden">
-<div class="p-6">
-<h3 class="text-2xl font-bold mb-2">Gdje se nalazimo</h3>
-<p class="text-gray-500 mb-4 italic"><i class="fas fa-map-marker-alt mr-2 text-red-500"></i>Ulica Jadrana 1, 21000 Split</p>
+<section id="galerija" class="mb-12">
+<h3 class="text-2xl font-bold mb-8">Galerija fotografija</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 1">
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 2">
+<img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 3">
+<img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 4">
+<img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 5">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 6">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 7">
+<img src="https://images.unsplash.com/photo-1499916078039-922301b0eb9b?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 8">
+<img src="https://images.unsplash.com/photo-1507089947368-19c1da97753e?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 9">
+<img src="https://images.unsplash.com/photo-1505691722718-62b479754a5a?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 10">
+<img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 11">
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500" class="rounded-xl aspect-square object-cover shadow-sm hover:scale-105 transition duration-300" alt="Apartman 12">
 </div>
-<div class="w-full h-[400px]">
+</section>
+
+<section id="lokacija" class="mb-12">
+<div class="max-w-2xl mx-auto bg-white p-3 rounded-3xl shadow-sm border border-gray-100 overflow-hidden text-center">
+<h3 class="text-xl font-bold my-4">Naša lokacija</h3>
+<div class="w-full h-[250px] rounded-2xl overflow-hidden shadow-inner">
 <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.385315414844!2d16.4385!3d43.5081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355dfc00000001%3A0x0!2zNDPCsDMwJzI5LjIiTiAxNsKwMjYnMTguNiJF!5e0!3m2!1shr!2shr!4v1710000000000!5m2!1shr!2shr"
-width="100%"
-height="100%"
-style="border:0;"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade">
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.367067963364!2d16.4385!3d43.5081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMwJzI5LjIiTiAxNsKwMjYnMTguNiJF!5e0!3m2!1shr!2shr!4v1700000000000"
+width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
 </iframe>
 </div>
-</section>
-
-<section id="galerija">
-<h3 class="text-2xl font-bold mb-6">Galerija</h3>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=400&q=80" class="rounded-lg aspect-square object-cover shadow-sm" alt="Slika 1">
-<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=400&q=80" class="rounded-lg aspect-square object-cover shadow-sm" alt="Slika 2">
+<p class="text-gray-500 text-sm mt-4 mb-2 italic">
+<i class="fas fa-map-marker-alt text-red-500 mr-2"></i> Ulica Jadrana 1, 21000 Split
+</p>
 </div>
 </section>
-</div>
 
-<div class="lg:col-span-1">
-<div id="contact-box" class="bg-blue-700 text-white p-8 rounded-3xl shadow-xl sticky top-28">
-<h3 class="text-2xl font-bold mb-4">Kontakt</h3>
-<p class="mb-6 opacity-80 italic text-sm text-yellow-300">"Najbolja lokacija u gradu prema ocjenama gostiju!"</p>
-<div class="space-y-4">
-<p class="text-lg font-semibold"><i class="fas fa-phone mr-3"></i> +385 91 123 4567</p>
-<p class="text-lg font-semibold"><i class="fas fa-envelope mr-3"></i> info@apartman.com</p>
+<section id="kontakt" class="bg-blue-700 text-white p-10 rounded-3xl shadow-xl text-center">
+<h3 class="text-3xl font-bold mb-6">Rezervirajte svoj termin</h3>
+<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+<div class="hover:scale-105 transition">
+<p class="text-xs uppercase opacity-70 mb-1">Telefon / WhatsApp</p>
+<p class="text-2xl font-bold">+385 91 123 4567</p>
+</div>
+<div class="hidden md:block h-12 w-px bg-blue-500 opacity-50"></div>
+<div class="hover:scale-105 transition">
+<p class="text-xs uppercase opacity-70 mb-1">E-mail adresa</p>
+<p class="text-2xl font-bold">info@apartman.com</p>
 </div>
 </div>
-</div>
-</div>
+</section>
 
 </main>
 
 <footer class="bg-gray-900 text-gray-500 py-10 text-center">
-<p>&copy; 2024 Apartman Premium. Sva prava pridržana.</p>
+<p>© 2024 Apartman Premium. Sva prava pridržana.</p>
 </footer>
 
 </body>
